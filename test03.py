@@ -6,11 +6,7 @@ import pandas as pd
 from sklearn import preprocessing
 
 df = pd.read_csv('teleCust1000t.csv')
-
-
-# df = df['custcat'].value_counts()
-# df.hist(bins=15)
-
-df['income'].hist()
-
+df = df['custcat'].value_counts()
+print(df.head())
+df.hist(bins=15)
 plt.show()
